@@ -153,9 +153,13 @@ a.attribution:hover {
 	margin-right: 3%;
 	padding-bottom: 30px;
 }
-main.home h2 {
-	margin-top: 50px;
+nav h2 {
+	margin-top: 40px;
 }
+.subNav ul{
+	margin-bottom: 0;
+}
+
 section {
 	position: relative;
 }
@@ -192,14 +196,34 @@ section.home p{
 }
 /*=======Footer Styles==========*/
 footer{
-
+	background-color: #02487c;
+	width: 100%;
+	position: relative;
 }
 footer p{
-
+	color: #fff;
+	font-size: .9em;
+	display: inline-block;
+	width: 47%;
+	margin-left: 6%;
 }
 footer p.copyright {
-
+	text-align: right;
+	position: absolute;
+	margin-left: 0;
+	right:6%;
+	font-size: .7em;
+	top:40%;
+}
+footer p.disclaimer{
+	bottom: 0;
+	text-align: right;
+	position: absolute;
+	margin-left: 0;
+	right:6%;
 }
 footer a {
+	color: #fff;
+	font-size: .7em;
 
 }
