@@ -28,9 +28,20 @@ a:hover{
 	background-color: rgba(255,255,255,.8)
 
 }
-
+/* THE ALMIGHTY CLEARFIX */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
 /*=========Header Styles============*/
 header {
+	width: 96%;
 	margin-left: 2%;
 	margin-right: 2% auto;
 }
@@ -70,7 +81,7 @@ a.button{
 	display: block;
 	color: #fff;
 	text-decoration: none;
-	text-shadow: 0 1px 0 #333;
+	text-shadow: 0 2px 0 #333;
 	background-color: #5e252c;
 	border-radius: 3px;
 	text-align: center;
@@ -81,6 +92,9 @@ a.button{
 	height: 30px;
 	border-radius: 0;
 	text-align: center;
+	line-height: 2;
+	background: url(../content/menumain.png) no-repeat top right 5px #5e252c;
+	background-size: contain;
 }
 .button img {
 	height:13px;
@@ -88,7 +102,7 @@ a.button{
 	margin-right: 4px;
 }
 .mainButton {
-	width: 96%;
+	width: 100%;
 	height: 38px;
 	line-height: 2.5;
 }
@@ -97,29 +111,85 @@ a.button{
 }
 /*==========Main Styles============*/
 main {
-
-	margin-left: 2% auto;
+	width: 96%;
+	margin-left: 2%;
 	margin-right: 2% auto;
+	background-color: rgba(225,225,225,.72);
 }
-.subNav {
-
+div.valuesImage{
+	position: relative;
+	text-align: center;
 }
-div.valuesImage {
-
-}
-.valuesImage p {
-
-}
-.smallerText {
-
-}
-.attorney{
-
-}
-.smallButton{
-
+.valuesImage img{
+	
+	max-width: 100%;
 }
 
+.valuesImage p:nth-child(2) {
+	position: absolute;
+	max-height: 500px;
+	bottom:0;
+	background-color: rgba(255,255,255, .62);
+	margin:0 auto;
+	padding:15px 30px 10px;
+	text-shadow: 0 1px 0 #333;
+}
+span.smallerText {
+	font-size: .7em;
+}
+a.attribution {
+	display: block;
+	font-size: .3em;
+	color: #fff;
+	text-shadow:0 0 0;
+
+}
+a.attribution:hover {
+	background: none;
+}
+.innerContent {
+	width: 94%;
+	margin-left: 3%;
+	margin-right: 3%;
+	padding-bottom: 30px;
+}
+main.home h2 {
+	margin-top: 50px;
+}
+section {
+	position: relative;
+}
+section.home p{
+	padding-bottom: 40px;
+}
+.smallButton {
+	height: 38px;
+	line-height: 2.5;
+	width: 40%;
+	position: absolute;
+	right: 0;
+	bottom:30px;
+}
+.leftButton{
+	left:0;
+}
+
+.attorney img{
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-right: 4%;
+
+}
+.attorney div a{
+	font-size: .7em;
+}
+.attorney div h3{
+	margin-top: 30px;
+}
+.attorney h3{
+	margin-top: -10px;
+}
 /*=======Footer Styles==========*/
 footer{
 
