@@ -86,7 +86,14 @@ a.button{
 	color: #fff;
 	text-decoration: none;
 	text-shadow: 0 2px 0 #333;
-	background-color: #5e252c;
+	background: #773d40; /* Old browsers */
+background: -moz-linear-gradient(top, #773d40 0%, #661d20 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#773d40), color-stop(100%,#661d20)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #773d40 0%,#661d20 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #773d40 0%,#661d20 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #773d40 0%,#661d20 100%); /* IE10+ */
+background: linear-gradient(to bottom, #773d40 0%,#661d20 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#773d40', endColorstr='#661d20',GradientType=0 );
 	border-radius: 3px;
 	text-align: center;
 	margin-top: 2px;
@@ -97,7 +104,14 @@ a.button{
 	border-radius: 0;
 	text-align: center;
 	line-height: 2;
-	background: url(../content/menumain.png) no-repeat top right 5px #5e252c;
+	background: url(../content/menumain.png) no-repeat top right 5px, background: #773d40; /* Old browsers */
+	background: url(../content/menumain.png) no-repeat top right 5px, -moz-linear-gradient(top, #773d40 0%, #661d20 100%); /* FF3.6+ */
+	background: url(../content/menumain.png) no-repeat top right 5px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#773d40), color-stop(100%,#661d20)); /* Chrome,Safari4+ */
+	background: url(../content/menumain.png) no-repeat top right 5px, -webkit-linear-gradient(top, #773d40 0%,#661d20 100%); /* Chrome10+,Safari5.1+ */
+	background: url(../content/menumain.png) no-repeat top right 5px, -o-linear-gradient(top, #773d40 0%,#661d20 100%); /* Opera 11.10+ */
+	background: url(../content/menumain.png) no-repeat top right 5px, -ms-linear-gradient(top, #773d40 0%,#661d20 100%); /* IE10+ */
+    background: url(../content/menumain.png) no-repeat top right 5px, linear-gradient(to bottom, #773d40 0%,#661d20 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#773d40', endColorstr='#661d20',GradientType=0 );
 	background-size: contain;
 }
 .button img {
@@ -334,6 +348,22 @@ footer a {
 
 /*=================At 950=============*/
 @media screen and (min-width: 950px) {
+	header p:nth-child(3) {
+		position: absolute;
+		top:111px;
+		margin: 0;
+		right:0;
+	}
+	header p:nth-child(2){
+		position: absolute;
+		top:115px;
+		right:0;
+		text-align: right;
+	}
+	h1.logoReplace {
+		height: 183px;
+	}
+
 	div.valuesImage p:nth-child(2) {
 		font-size: 27px;
 		text-align: left;
@@ -352,7 +382,7 @@ footer a {
 	}
 	a.callButton {
 		position: absolute;
-		top:-93px;
+		top:-65px;
 	}
 	div.callButtons {
 		width: 73%;
