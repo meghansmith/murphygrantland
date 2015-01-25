@@ -169,6 +169,10 @@ a.attribution:hover {
 nav h2 {
 	margin-top: 40px;
 }
+.subNav li {
+	margin-bottom: 15px;
+	line-height: 1.5;
+}
 .subNav ul{
 	margin-bottom: 40px;
 }
@@ -344,6 +348,7 @@ footer a {
 	}
 	nav.subNav {
 		width: 27%;
+		padding-top: 0px;
 	}
 	a.callButton {
 		position: absolute;
@@ -355,7 +360,17 @@ footer a {
 	}
 	div.homeColumn {
 		width: 72%;
-		padding-left: 4%
+		padding-left: 4%;
+		margin-top: 20px;
+	}
+	div.innerContent {
+		padding-top: 0;
+	}
+	header p {
+		font-size: 1em;
+	}
+	header p.phoneNumber {
+		font-size: 1em;
 	}
 
 }
@@ -364,8 +379,8 @@ footer a {
 
 /*===================Full Size 1040 ===============*/
 @media screen and (min-width: 1040px){
-	.wrapper {
+	div.wrapper {
 		max-width: 1000px;
-		margin: auto;
+		margin:  0 auto;
 	}
 }
