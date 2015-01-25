@@ -25,7 +25,7 @@ a{
 	font-family: Raleway, sans-serif;
 }
 a:hover{
-	background-color: rgba(255,255,255,.8)
+	color: #be868d;
 
 }
 /* THE ALMIGHTY CLEARFIX */
@@ -243,11 +243,11 @@ footer a {
 }
 
 
-/*=================At 727=============*/
-@media screen and (min-width: 727px) {
+/*=================At 635=============*/
+@media screen and (min-width: 635px) {
 
 
-   /*=======General Styles 727===========*/
+   /*=======General Styles 635===========*/
 	div.wrapper {
 		margin-left: 20px;
 		margin-right: 20px;
@@ -273,11 +273,24 @@ footer a {
 	}
 
 	.mainNav li{
-		display: inline-block;
-		width: 16%;
+		float: left;
+		width: 16.666%;
 	}
+	
+	.mainNav ul {
+		background-color: #5e252c;
+		text-align: center;
+		margin: 0;
+		padding: 0;
 
-
+	}
+	.mainNav a {
+		font-size: 13px;
+		line-height: 3;
+	}
+	a.button:hover{
+		background-color: #7b434a;
+	}
 	/*==========Main Styles @ 727=============*/
 
 	.callButton {
@@ -311,3 +324,7 @@ footer a {
 	
 	
 }
+
+
+/*=================At 727=============*/
+@media screen and (min-width: 727px) {
