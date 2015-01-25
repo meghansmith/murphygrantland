@@ -264,7 +264,7 @@ footer a {
 	}
 
 
-	/*==========Header Styles @ 727=============*/
+	/*==========Header Styles @ 635=============*/
 	a#menuButton {
 		display: none;
 	}
@@ -291,7 +291,7 @@ footer a {
 	a.button:hover{
 		background-color: #7b434a;
 	}
-	/*==========Main Styles @ 727=============*/
+	/*==========Main Styles @ 635=============*/
 
 	.callButton {
 		width: 47%;
@@ -313,7 +313,9 @@ footer a {
 		padding-top: 30px;
 		width: 48%;
 		float: left;
-		
+	}
+	.subNav ul {
+		padding-left: 15px;
 	}
 	div.homeColumn {
 		float: right;
@@ -326,5 +328,44 @@ footer a {
 }
 
 
-/*=================At 727=============*/
-@media screen and (min-width: 727px) {
+/*=================At 950=============*/
+@media screen and (min-width: 950px) {
+	div.valuesImage p:nth-child(2) {
+		font-size: 27px;
+		text-align: left;
+		padding-bottom: 75px;
+		padding-right: 15.5%;
+		padding-left: 15.5%
+	}
+	div.valuesImage a{
+		text-align: right;
+		position: absolute;
+		bottom:0;
+	}
+	nav.subNav {
+		width: 27%;
+	}
+	a.callButton {
+		position: absolute;
+		top:-93px;
+	}
+	div.callButtons {
+		width: 73%;
+		margin:0 auto;
+	}
+	div.homeColumn {
+		width: 72%;
+		padding-left: 4%
+	}
+
+}
+
+
+
+/*===================Full Size 1040 ===============*/
+@media screen and (min-width: 1040px){
+	.wrapper {
+		max-width: 1000px;
+		margin: auto;
+	}
+}
