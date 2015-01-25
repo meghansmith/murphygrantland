@@ -283,13 +283,36 @@ footer a {
 
 
 	/*==========Header Styles @ 635=============*/
+	header p:nth-child(3) {
+		position: absolute;
+		top:89px;
+		margin: 0;
+		right:0;
+	}
+	header p:nth-child(2){
+		position: absolute;
+		top:91px;
+		right:0;
+		text-align: right;
+	}
+	.logoReplace a {
+		position: relative;
+		display: inline-block;
+		height: 190px;
+		top:0;
+		left: 0;
+		background-repeat: no-repeat;
+	}
+
 	a#menuButton {
 		display: none;
 	}
 	ul.menuHide {
 		display: block;
 	}
-
+	nav.mainNav{
+		margin-top: -19px;
+	}
 	.mainNav li{
 		float: left;
 		width: 16.666%;
@@ -348,22 +371,13 @@ footer a {
 
 /*=================At 950=============*/
 @media screen and (min-width: 950px) {
+	
 	header p:nth-child(3) {
-		position: absolute;
-		top:111px;
-		margin: 0;
-		right:0;
+		top:100px;
 	}
 	header p:nth-child(2){
-		position: absolute;
-		top:115px;
-		right:0;
-		text-align: right;
+		top:101px;
 	}
-	h1.logoReplace {
-		height: 183px;
-	}
-
 	div.valuesImage p:nth-child(2) {
 		font-size: 27px;
 		text-align: left;
