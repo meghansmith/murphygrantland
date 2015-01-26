@@ -264,6 +264,31 @@ div.buttonWrapper {
 	min-width: 144px;
 }
 
+
+
+
+ /*========== Attorney Styles ============*/
+ .subHide {
+ 	display: none;
+ }
+div.attyCard {
+	padding-bottom: 1px;
+}
+.attyCard img {
+	max-width: 50%;
+	float: left;
+	margin-right: 4%;
+	margin-top:-10px;
+	margin-bottom: 30px;
+}
+.attyCard a {
+	font-size: .7em;
+}
+.attyCard div h3 {
+	margin-top: 30px;
+
+}
+
 /*=======Footer Styles==========*/
 footer{
 	background-color: #02487c;
@@ -418,6 +443,22 @@ footer a {
 		text-shadow: 0 1px 0 #333;
 	}
 	
+
+	/*========== Attorney Styles ===========*/
+	a#subButton {
+		display: none;
+	}
+	.subHide {
+		display: block !important;
+	}
+	.attorneys .subNav {
+		margin-top: -47px;
+		padding-top: 0;
+		width: 26%;
+	}
+	.attorneys .homeColumn {
+		width: 70%;
+	}
 }
 
 

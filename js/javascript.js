@@ -15,7 +15,9 @@ $(document).ready(function(){
 			$(this).html("Read More");
 		}
 	});
-
+	$('#subButton').click(function(){
+		$(".subHide").slideToggle('fast');
+	})
 
 
 });
