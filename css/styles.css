@@ -474,6 +474,10 @@ footer a {
 	#expandAbout {
 		display: none;
 	}
+	.pageImage p {
+		padding-right: 20%;
+		font-size: 1.5em;
+	}
 }
 
 
