@@ -53,6 +53,7 @@ header {
 	width: 310px;
 	background-size: contain;
 	background-image: url(../content/mglogosmall.png);
+	background-image: linear-gradient(transparent, transparent), url ("../content/mglogo.svg");
 	text-indent: -9999px;
 }
 header h1{
@@ -87,12 +88,9 @@ a.button{
 	text-decoration: none;
 	text-shadow: 0 2px 0 #333;
 	background: #773d40; /* Old browsers */
-background: -moz-linear-gradient(top, #773d40 0%, #661d20 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#773d40), color-stop(100%,#661d20)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #773d40 0%,#661d20 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #773d40 0%,#661d20 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, #773d40 0%,#661d20 100%); /* IE10+ */
-background: linear-gradient(to bottom, #773d40 0%,#661d20 100%); /* W3C */
+background: -webkit-linear-gradient(#773d40 0%, #661d20 100%);
+background: -o-linear-gradient(#773d40 0%, #661d20 100%);
+background: linear-gradient(#773d40 0%, #661d20 100%); /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */ /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#773d40', endColorstr='#661d20',GradientType=0 );
 	border-radius: 3px;
 	text-align: center;
@@ -111,7 +109,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#773d40', end
 	background: url(../content/menumain.png) no-repeat top right 5px, -o-linear-gradient(top, #773d40 0%,#661d20 100%); /* Opera 11.10+ */
 	background: url(../content/menumain.png) no-repeat top right 5px, -ms-linear-gradient(top, #773d40 0%,#661d20 100%); /* IE10+ */
     background: url(../content/menumain.png) no-repeat top right 5px, linear-gradient(to bottom, #773d40 0%,#661d20 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#773d40', endColorstr='#661d20',GradientType=0 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#773d40', endColorstr='#661d20',GradientType=0 );
 	background-size: contain;
 }
 .button img {
@@ -150,13 +148,13 @@ div.valuesImage{
 	max-width: 100%;
 }
 
-.valuesImage p:nth-child(2) {
+.valuesImage p{
 	position: absolute;
-	max-height: 500px;
-	bottom:0;
+	max-height: 400px;
+	bottom:3px;
 	background-color: rgba(255,255,255, .62);
 	margin:0 auto;
-	padding:15px 30px 10px;
+	padding:15px 30px 5px;
 	text-shadow: 0 1px 0 #333;
 }
 span.smallerText {
@@ -232,27 +230,32 @@ footer{
 	width: 100%;
 	position: relative;
 }
+footer .innerContent {
+	padding-top: 0;
+	padding-bottom: 0;
+}
 footer p{
 	color: #fff;
 	font-size: .9em;
 	display: inline-block;
 	width: 47%;
-	margin-left: 6%;
+	margin-right: 0;
+	padding-right: 0;
 }
 footer p.copyright {
 	text-align: right;
 	position: absolute;
 	margin-left: 0;
-	right:6%;
 	font-size: .7em;
 	top:40%;
+	right: 0;
 }
 footer p.disclaimer{
 	bottom: 0;
 	text-align: right;
 	position: absolute;
 	margin-left: 0;
-	right:6%;
+	right: 0;
 }
 footer a {
 	color: #fff;
@@ -308,7 +311,7 @@ footer a {
 		display: none;
 	}
 	ul.menuHide {
-		display: block;
+		display: block !important;
 	}
 	nav.mainNav{
 		margin-top: -19px;
@@ -330,7 +333,8 @@ footer a {
 		line-height: 3;
 	}
 	a.button:hover{
-		background-color: #7b434a;
+		background: #7b434a;
+
 	}
 	/*==========Main Styles @ 635=============*/
 
@@ -378,7 +382,7 @@ footer a {
 	header p:nth-child(2){
 		top:101px;
 	}
-	div.valuesImage p:nth-child(2) {
+	div.valuesImage p{
 		font-size: 27px;
 		text-align: left;
 		padding-bottom: 75px;
