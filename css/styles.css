@@ -153,9 +153,10 @@ div.valuesImage{
 	max-height: 400px;
 	bottom:3px;
 	background-color: rgba(255,255,255, .62);
+	font-size: .9em;
 	margin:0 auto;
 	padding:15px 30px 5px;
-	text-shadow: 0 1px 0 #333;
+	
 }
 span.smallerText {
 	font-size: .7em;
@@ -368,7 +369,10 @@ footer a {
 		margin-top: 52px;
 		padding-left: 1%;
 	}
-	
+	div.valuesImage p {
+		font-size: 1.3em;
+		text-shadow: 0 1px 0 #333;
+	}
 	
 }
 
