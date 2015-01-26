@@ -28,6 +28,9 @@ a:hover{
 	color: #be868d;
 
 }
+.hide {
+	display: none;
+}
 /* THE ALMIGHTY CLEARFIX */
 .clearfix:before, .clearfix:after {
   content: "";
@@ -128,10 +131,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#773d40', end
 	height: 38px;
 	line-height: 2.5;
 }
+.smallButton {
+	height: 38px;
+	line-height: 2.5;
+	width: 40%;
+	position: absolute;
+	right: 0;
+}
 .menuHide{
 	display: none;
 }
-/*==========Main Styles============*/
+.contentHide {
+	display:none;
+}
+/*==========Home & Main Styles============*/
 main {
 	width: 96%;
 	margin-left: 2%;
@@ -197,12 +210,8 @@ section {
 section p{
 	padding-bottom: 40px;
 }
-.smallButton {
-	height: 38px;
-	line-height: 2.5;
-	width: 40%;
-	position: absolute;
-	right: 0;
+.home .smallButton {
+	
 	bottom:30px;
 }
 .leftButton{
@@ -225,6 +234,36 @@ section p{
 .homeAttorney h3{
 	margin-top: -10px;
 }
+
+
+
+/*============================
+		General Content Styles
+==============================*/
+div.pageImage {
+	position: relative;
+}
+.pageImage img{
+	max-width: 100%;
+}
+.pageImage p {
+	background-color: rgba(255,255,255, .62);
+	position: absolute;
+	bottom: 10%;
+	width: 100%;
+	padding: 5px 3%;
+	margin:0;
+	text-align: right;
+	font-size: 1.3em;
+	text-shadow: 0 1px 0 #333;
+}
+div.buttonWrapper {
+	margin-bottom: 59px;
+}
+.aboutUs .button {
+	min-width: 144px;
+}
+
 /*=======Footer Styles==========*/
 footer{
 	background-color: #02487c;
@@ -337,6 +376,11 @@ footer a {
 		background: #7b434a;
 
 	}
+	.aboutUs .mainButton {
+		width:40%;
+		margin-top: 21px;
+
+	}
 	/*==========Main Styles @ 635=============*/
 
 	.callButton {
@@ -424,7 +468,12 @@ footer a {
 	header p.phoneNumber {
 		font-size: 1em;
 	}
-
+	.aboutHide {
+		display: block !important;
+	}
+	#expandAbout {
+		display: none;
+	}
 }
 
 

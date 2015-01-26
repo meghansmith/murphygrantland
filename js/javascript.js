@@ -5,9 +5,17 @@ $(document).ready(function(){
 		$(".menuHide").slideToggle('fast');
 		
 	});
-
-	$("#aboutButton").click(function(){
-		$(".aboutHide").slideToggle('fast')
+	$(".aboutHide").addClass('hide');
+	$("#expandAbout").click(function(){
+		$(".aboutHide").toggleClass('hide');
+		var myBtn = $(this);
+		if(myBtn.html() == "Read More") {
+			$(this).html("Read Less");
+		} else {
+			$(this).html("Read More");
+		}
 	});
+
+
 
 });
