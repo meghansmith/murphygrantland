@@ -271,6 +271,11 @@ div.buttonWrapper {
  .subHide {
  	display: none;
  }
+ div.attyCard div.attyContact h3 a {
+ 
+	font-family: "Raleway", sans-serif;
+	font-size: 1.05em;
+ }
 div.attyCard {
 	padding-bottom: 1px;
 }
@@ -289,6 +294,33 @@ div.attyCard {
 	margin-bottom: 0;
 }
 
+.dontFloat {
+	clear: both;
+	padding-top: 30px;
+}
+.attyDetail img {
+	float: left;
+	margin-right: 15px;
+}
+.attyDetail .attyContact a{
+	font-size: .7em;
+}
+.attyDetail p{
+	margin-top: 50px;
+}
+.attyDetail>h3:before{
+	content:"";
+	display: block;
+	max-width: 450px;
+	height: 1px;
+	border: 1px solid #005ea4;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.colorChange a {
+	color: #005ea4;
+	text-decoration: none;
+}
 
 /*=======Footer Styles==========*/
 footer{
@@ -328,7 +360,15 @@ footer a {
 	font-size: .7em;
 
 }
+div.attyCard:after {
+	content:"";
+	display: block;
+	max-width: 450px;
+	height: 1px;
+	border: 2px solid #005ea4;
+	margin-top: 35px;
 
+}
 
 /*=================At 635=============*/
 @media screen and (min-width: 635px) {
@@ -443,7 +483,16 @@ footer a {
 		font-size: 1.3em;
 		text-shadow: 0 1px 0 #333;
 	}
-	
+	iframe {
+	width: 350px;
+	float: left;
+	margin-right: 15px;
+	}
+	p.aboutContact {
+	margin-top: 46px;
+	}
+
+
 
 	/*========== Attorney Styles ===========*/
 	a#subButton {
