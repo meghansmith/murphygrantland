@@ -5,6 +5,7 @@
 }
 body {
 	background: url(../content/exclusive_paper_@2X.png);
+
 }
 h2{
 	color: #005ea4;
@@ -99,6 +100,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#773d40', end
 	border-radius: 3px;
 	text-align: center;
 	margin-top: 2px;
+	opacity: .9;
 	
 }
 #menuButton{
@@ -439,8 +441,11 @@ div.attyCard:after {
 		font-size: 13px;
 		line-height: 3;
 	}
+	.mainNav .button{
+		opacity: .8;
+	}
 	a.button:hover{
-		background: #7b434a;
+		opacity: 1;
 
 	}
 	.aboutUs .mainButton {
